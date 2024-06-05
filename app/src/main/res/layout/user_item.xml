@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="8dp"
+        android:src="@drawable/usuario"/>
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_user"
+        tools:text="Aca va el nombre"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="6dp"
+        android:textAllCaps="true"/>
+    <TextView
+        android:id="@+id/tvLastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Aca va el apellido"
+        android:layout_marginStart="6dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_user"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:textAllCaps="true"/>
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="45"
+        android:layout_marginStart="6dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_user"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastname"
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        />
+    <TextView
+        android:id="@+id/tvBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="21/07/1945"
+        android:layout_marginStart="6dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_user"
+        app:layout_constraintTop_toBottomOf="@+id/tvAge"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:textAllCaps="true"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
